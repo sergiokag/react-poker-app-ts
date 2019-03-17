@@ -11,10 +11,10 @@ export const initializeMessages = () => {
   }
 }
 
-export const addMessage = (message: string) => {
-  return { 
+export const addMessage = ( payload: { message : string } ) => {
+  return {
     type: ADD_MESSAGE,
-    payload: {message}
+    payload
   }
 }
 // #endregion Action Creators
